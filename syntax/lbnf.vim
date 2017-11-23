@@ -21,11 +21,11 @@ syn match lbnfIdent     / [a-zA-Z0-9]*/ contained
 syn region lbnfString start=+"+  end=+"+
 syn region lbnfList   start=+\[+ end=+\]+
 
-hi link lbnfStatement  Include
+hi link lbnfStatement  Keyword
 hi link lbnfString     String
-hi link lbnfList       Special
+hi link lbnfList       Identifier
 hi link lbnfComment    Comment
-hi link lbnfLabel      Statement
-hi link lbnfClass      SpecialComment
-hi link lbnfEquals     Define
-hi link lbnfIdent      NONE
+hi link lbnfLabel      Label
+hi link lbnfClass      Identifier
+hi link lbnfEquals     Operator
+hi link lbnfIdent      Identifier
