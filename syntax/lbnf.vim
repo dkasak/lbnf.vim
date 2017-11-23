@@ -4,7 +4,7 @@
 " and put this file in ~/.vim/syntax/
 " Author: Jim Persson <di2peji [AT] student [DOT] chalmers [dot] se>
 
-if version < 600
+if v:version < 600
   syntax clear
 elseif exists("b:current_syntax")
   finish
