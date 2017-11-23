@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language: LBNF
-" Add this to your vimrc "au bufreadpre,bufnewfile *.cf set ft=lbnf" 
+" Add this to your vimrc "au bufreadpre,bufnewfile *.cf set ft=lbnf"
 " and put this file in ~/.vim/syntax/
 " Author: Jim Persson <di2peji [AT] student [DOT] chalmers [dot] se>
 
@@ -21,11 +21,11 @@ syn match lbnfIdent     / [a-zA-Z0-9]*/ contained
 syn region lbnfString start=+"+ end=+"+
 syn region lbnfList   start=+\[+ end=+\]+
 
-hi link lbnfStatement	Include
-hi link lbnfString		String
-hi link lbnfList		Special
-hi link lbnfComment		Comment
-hi link lbnfLabel		Statement
-hi link lbnfClass		SpecialComment
-hi link lbnfEquals		Define
-hi link lbnfIdent		NONE
+hi link lbnfStatement   Include
+hi link lbnfString      String
+hi link lbnfList        Special
+hi link lbnfComment     Comment
+hi link lbnfLabel       Statement
+hi link lbnfClass       SpecialComment
+hi link lbnfEquals      Define
+hi link lbnfIdent       NONE
