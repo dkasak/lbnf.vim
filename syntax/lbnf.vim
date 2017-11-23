@@ -13,19 +13,19 @@ endif
 syn match lbnfStatement /^entrypoints/
 syn match lbnfStatement /^comment/
 syn match lbnfComment   /^--.*$/
-syn match lbnfLabel     /^\w*\./ nextgroup=lbnfClass
-syn match lbnfClass     /.*/ contained contains=lbnfEquals,lbnfString,lbnfList,lbnfIdent
-syn match lbnfEquals    /::=/ contained
+syn match lbnfLabel     /^\w*\./        nextgroup=lbnfClass
+syn match lbnfClass     /.*/            contained contains=lbnfEquals,lbnfString,lbnfList,lbnfIdent
+syn match lbnfEquals    /::=/           contained
 syn match lbnfIdent     / [a-zA-Z0-9]*/ contained
 
-syn region lbnfString start=+"+ end=+"+
+syn region lbnfString start=+"+  end=+"+
 syn region lbnfList   start=+\[+ end=+\]+
 
-hi link lbnfStatement   Include
-hi link lbnfString      String
-hi link lbnfList        Special
-hi link lbnfComment     Comment
-hi link lbnfLabel       Statement
-hi link lbnfClass       SpecialComment
-hi link lbnfEquals      Define
-hi link lbnfIdent       NONE
+hi link lbnfStatement  Include
+hi link lbnfString     String
+hi link lbnfList       Special
+hi link lbnfComment    Comment
+hi link lbnfLabel      Statement
+hi link lbnfClass      SpecialComment
+hi link lbnfEquals     Define
+hi link lbnfIdent      NONE
