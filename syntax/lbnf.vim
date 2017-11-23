@@ -12,6 +12,13 @@ endif
 
 syn match lbnfStatement /^entrypoints/
 syn match lbnfStatement /^comment/
+syn match lbnfStatement /^rules/
+syn match lbnfStatement /\v^separator(\s+nonempty)/
+syn match lbnfStatement /\v^terminator(\s+nonempty)/
+syn match lbnfStatement /\v^(position )?token/
+syn match lbnfStatement /^layout/
+syn match lbnfStatement /^coercions/
+syn match lbnfStatement /^internal/
 syn match lbnfComment   /^--.*$/
 syn match lbnfLabel     /^\w*\./        nextgroup=lbnfClass
 syn match lbnfClass     /.*/            contained contains=lbnfEquals,lbnfString,lbnfList,lbnfIdent
