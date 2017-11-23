@@ -10,6 +10,8 @@ elseif exists('b:current_syntax')
   finish
 endif
 
+set commentstring=--%s
+
 syn match lbnfStatement /^entrypoints/
 syn match lbnfStatement /^comment/
 syn match lbnfStatement /^rules/
