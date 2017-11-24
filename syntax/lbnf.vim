@@ -1,8 +1,16 @@
-" Vim syntax file
 " Language: LBNF
-" Add this to your vimrc "au bufreadpre,bufnewfile *.cf set ft=lbnf"
-" and put this file in ~/.vim/syntax/
-" Author: Jim Persson <di2peji [AT] student [DOT] chalmers [dot] se>
+" Reference: <https://bnfc.readthedocs.io/>
+"
+" Install with a package manager (like vim-plug) or manually by putting this
+" file in ~/.vim/syntax/
+"
+" To make (n)vim recognize .cf files as LBNF, add the following to your
+" (n)vimrc:
+"
+"     "au BufReadPre,BufNewFile *.cf set ft=lbnf"
+"
+" Author:          Denis Kasak <dkasak [AT] termina [DOT] org [dot] uk>
+" Original author: Jim Persson <di2peji [AT] student [DOT] chalmers [dot] se>
 
 if v:version < 600
   syntax clear
