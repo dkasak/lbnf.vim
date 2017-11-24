@@ -1,8 +1,8 @@
 " Language: LBNF
 " Reference: <https://bnfc.readthedocs.io/>
 "
-" Install with a package manager (like vim-plug) or manually by putting this
-" file in ~/.vim/syntax/
+" Install with a vim plugin manager (like vim-plug) or manually by putting
+" this file in ~/.vim/syntax/
 "
 " To make (n)vim recognize .cf files as LBNF, add the following to your
 " (n)vimrc:
